@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+
+  gcc:
+    image: gcc:4.9
+    volumes:
+      - .:/cpp
+    working_dir: /cpp # Establecer un directorio de trabajo en el contenedor
+    command: tail -f /dev/null # Comando para que no termine la terminal hasta que se
+                               # le indique
+    
