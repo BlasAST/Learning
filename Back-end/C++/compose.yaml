@@ -9,4 +9,12 @@ services:
     working_dir: /cpp # Establecer un directorio de trabajo en el contenedor
     command: tail -f /dev/null # Comando para que no termine la terminal hasta que se
                                # le indique
+
+# Para la ejecución en C++ lo que yo hago que me resulta más practico es:
+  # Mediante el comando g++, aunque tambien se podria con gcc para C
+  # me situo en el directorio más raiz al que los ficheros cpp
+  # y desde ahi me muevo en los distintos directorios con el comando 
+  # para solo crear un  ejecutable al hacer g++ fichero.cpp -o(nombre) a
+  # y que este, este en el raiz y lo voy reutilizando con todos los programas
+  # asi no tengo cada directorio con un a.exe
     
