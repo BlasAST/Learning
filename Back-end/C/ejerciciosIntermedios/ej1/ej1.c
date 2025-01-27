@@ -46,6 +46,17 @@ void aniadirNuevoProducto(Nodo **cabeza,Producto *producto){
     printf("Se ha guardado correctamente el producto\n");
 }
 
+void limpiarMemoria(Nodo **cabeza){
+    Nodo *temporal;
+    while(*cabeza!=NULL){
+        temporal=*cabeza;
+        *cabeza= (*cabeza)->siguiente;
+        free(temporal->productos);
+        free(temporal);
+    }
+    printf("Memoria liberada\n");
+}
+
 void menu(int opcion);
 int main(){
     printf("Vamos a hacer el carrito de tu compra\n");
@@ -64,7 +75,7 @@ int main(){
 
 void aniadirProducto();
 void listarProductos(Nodo *cabeza);
-void calcularCompra();
+void calcularCompra(Nodo *cabeza);
 void menu(int opcion){
     switch(opcion){
         case 1:
@@ -75,8 +86,10 @@ void menu(int opcion){
         break;
         case 3:
             calcularCompra(cabeza);
+            limpiarMemoria(&cabeza);
         break;
         case 4:
+        limpiarMemoria(&cabeza);
         printf("Hasta pronto\n");
         break;
         default:
