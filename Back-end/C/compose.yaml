@@ -6,8 +6,8 @@ services:
     image: gcc:4.9
     container_name: c_container
     volumes:
-      - .:/cpp
-    working_dir: /cpp # Establecer un directorio de trabajo en el contenedor
+      - .:/c
+    working_dir: /c # Establecer un directorio de trabajo en el contenedor
     command: tail -f /dev/null # Comando para que no termine la terminal hasta que se
                                # le indique
 
