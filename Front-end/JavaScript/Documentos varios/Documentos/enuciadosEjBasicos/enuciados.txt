@@ -1,0 +1,33 @@
+// Solucionar los siguientes ejercicios aplicando, principalmente, metodos de arrays y cadenas.
+
+// 1. esProductoIgual: Reazliar una función que reciba como argumento un array numérico y nos diga si el producto
+// de los valores que se encuentran en las posiciones impares. El valor en la 
+// primera posicón [0] se considera impar.
+
+// Para probar la función se creará un método, crearArrayAleatorio[numElemens,n], que devolverá un
+// array generado aleatoriamente con el número de elementos comprendidos entre numElems ynumElemn * 2 [primer argumento]
+// con valores, a su vez, aleatorios entre 1 y n, con n > 1[segundo argumento]
+
+// La 'aplicación' mostrará la información en el navegador [con documento.write()]: la matriz generada, el producto
+// de los pares e impares y la indicación de si el producto es igual o no.
+
+
+// 2. palabraMasLarga: Encontrar la palabra más larga de la frase que se pasa como argumento.
+
+// 3. invertirCadena: Invertir el orden de los caracteres de la frase que se pasa como argumento
+
+// 4.mismasLetras: Realizar una función que reciba como argumento un array con dos elementos de tipo cadena y devuelva true
+// si en el primer elemento de la matriz se encuentran todas las letras del segundo elemento de la matriz con independencia
+// de mayúsculas/minúsculas. Por ejemplo, ['javascript','JavaScript'] debe de devolver true;
+// ['java','JavaScript'],false;['JavaScript','java'],true;['Hola','aLoh',],true;
+
+
+// 5. Pedir al usuario dos fechas y mostrar el número de días que hay entre ellas. Para ello,
+// realizar una función que pida una fecha en el formato "aaaa/dd/mm" y otra una función
+// que, recibidas dos Date, devuelva el número de días entre ellas (la parte decimal de los
+// días se indicaran en horas, minutos y segundos).
+
+// 6. Realizar una 'aplicación web' que genere dos fechas aleatorias: una comprendida entre la fecha
+// actual más 60 días y otra, la fecha actual más 13 meses.
+// Calcular el número de años, meses y días desde la fecha actual a cada una de las generadas.
+// Escribir los resultados en el navegador con document.write()
