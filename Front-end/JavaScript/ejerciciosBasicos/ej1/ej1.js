@@ -10,16 +10,27 @@
 // *de los pares e impares y la indicación de si el producto es igual o no.
 
 function esProductoIgual(){
-    crearArrayAleatorio(8,20);
-    
+    let datos=crearArrayAleatorio(8,20);
+    let div = document.createElement('div');
+    let numeroImpares= (datos[0]+',' + datos.filter((v,i)=>i%2!=0)).split(',');
+    let numeroPares= datos.filter((v,i)=>i%2==0&&i!=0);
+    let sumaPares = numeroPares.reduce((a,v)=>a+parseInt(v),0);
+    let sumaImpares = numeroImpares.reduce((a,v)=>a+parseInt(v),0);
+
+    div.innerHTML=`
+        <h1>Datos= ${datos}</h1>
+        <h2>Numeros impares: ${numeroImpares}</h2>
+        <h2>Numeros pares: ${numeroPares}</h2>
+        <h3>Suma pares: ${sumaPares}</h3>
+        <h3>Suma impares: ${sumaImpares}</h3>
+    `;
+    document.body.appendChild(div);
 }
 
 function crearArrayAleatorio(numElemens,n){
     // Numero de elementos aleatorios generados entre numElemens y numElemens*2
     // valores aleatorios entre 1 y n siendo n > 1
-    let array= Array.from({length:Math.round(Math.random() * (numElemens*2 -numElemens) + numElemens)},
+    return Array.from({length:Math.round(Math.random() * (numElemens*2 -numElemens) + numElemens)},
     ()=>Math.round(Math.random() * n+1))
-    console.log(array);
 }
-
-crearArrayAleatorio(8,20);
+esProductoIgual(); 
