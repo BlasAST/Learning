@@ -1,0 +1,29 @@
+@import url(limpiezaPaddingsMargins.css);
+
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 100;
+}
+body{
+    height: 100dvh;
+    background-color: red;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10dvh;
+}
+.header > :last-child{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+.header figure,
+.header img{
+    height: 60%;
+}
+
+

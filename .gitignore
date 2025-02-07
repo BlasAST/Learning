@@ -1,5 +1,7 @@
 /.vscode
 
 *.tldr
-*a 
+
 # *a son los ejecutables que creo con c++
+Back-end/C++/a
+Back-end/C/a
