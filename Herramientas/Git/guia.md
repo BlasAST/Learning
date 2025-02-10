@@ -15,7 +15,7 @@ Basicamente seria un cloud donde varios desarrolladores unifican su trabajo medi
 
 - [Cómo funciona el control de versiones](#Cómo-funciona-el-control-de-versiones)
 
--[Tipos de sistemas de control de versiones](#Tipos-de-sistemas-de-control-de-versiones)
+- [Tipos de sistemas de control de versiones](#Tipos-de-sistemas-de-control-de-versiones)
 
 - [Instalación de Git](#Instalación-de-Git)
 
@@ -58,11 +58,11 @@ Algunas de las funcionalidades que tienen los sistemas de control de versiones s
 
 <p>Los sistemas de control de versiones han ido actualizando y se pueden clasificar en:</p>
 
-- <span class="enuciadoLista">Sistemas locales:</span> Hacer que una carpeta de tu equipo local se convierta en repositorio. Todos los documentos, proyectos o trabajos que se encuentren dentro de la carpeta. También permite la recuperación de archivos borrados. Un ejemplo de esto es <ins><b>TortoiseSVN</b></ins>
+- Sistemas locales: Hacer que una carpeta de tu equipo local se convierta en repositorio. Todos los documentos, proyectos o trabajos que se encuentren dentro de la carpeta. También permite la recuperación de archivos borrados. Un ejemplo de esto es <ins><b>TortoiseSVN</b></ins>
 
-- <span class="enuciadoLista">Sistemas centralizados:</span> Estos sistemas cuentan con un solo servidor en el que estará alojado el repositorio y tendremos herramientas para conectarnos al servidor y poder usarlo. Al estar en un servidor deberemos de acceder remotamente. Algunos ejemplos de esto son: <ins><b>CVS (Concurrent Versions System) o SVN (Apache Subversion)</b></ins>
+- Sistemas centralizados: Estos sistemas cuentan con un solo servidor en el que estará alojado el repositorio y tendremos herramientas para conectarnos al servidor y poder usarlo. Al estar en un servidor deberemos de acceder remotamente. Algunos ejemplos de esto son: <ins><b>CVS (Concurrent Versions System) o SVN (Apache Subversion)</b></ins>
 
-- <span class="enuciadoLista">Sistemas distribuidos:</span> En este caso, no se cuenta con un unico servidor. Los servidores estan replicados por lo que cada usuario tendrá su repositorio y estará replicado, de esta forma cada usuario no obtiene solo la ultima copia de los archivos subidos al servidor si no que se copia completamente el repositorio. Al estar distribuidos si uno falla o se daña se podrá restaurar con alguna de estas copias. 
+- Sistemas distribuidos: En este caso, no se cuenta con un unico servidor. Los servidores estan replicados por lo que cada usuario tendrá su repositorio y estará replicado, de esta forma cada usuario no obtiene solo la ultima copia de los archivos subidos al servidor si no que se copia completamente el repositorio. Al estar distribuidos si uno falla o se daña se podrá restaurar con alguna de estas copias. 
 Algunos ejemplos son: 
 <ins><b>Git, Mercurial, Bazaar o Darcs</b></ins>
 
@@ -72,10 +72,3 @@ Algunos ejemplos son:
 
 
 
-<style>
-
-.enuciadoLista{
-    color: green
-}
-
-</style>
