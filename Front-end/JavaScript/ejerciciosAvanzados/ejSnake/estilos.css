@@ -1,0 +1,23 @@
+* {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: red;
+    height: 100dvh;
+}
+
+.game{
+    background-color: teal;
+    height: 95%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.limit{
+    width: 90%;
+    height: 90%;
+    background-color: green;
+}
