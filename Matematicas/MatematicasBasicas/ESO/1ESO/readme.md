@@ -1,16 +1,23 @@
 # Conceptos
-- [Numeros naturales](#Numeros-naturales)
+- [1 Numeros naturales](#1-Numeros-naturales)
 
-- [Orden de números](#Orden-de-números)
+    - [Numeros naturales](#Numeros-naturales)
 
-- [Operaciones basicas](#Operaciones-basicas)
+    - [Orden de números](#Orden-de-números)
 
-- [Jerarquía de las operaciones](#Jerarquía-de-las-operaciones)
+    - [Operaciones basicas](#Operaciones-basicas)
 
-- [Ejercicios 1](#Ejercicios-1)
-- [Potencias](#Potencias)
-- [Ejercicios 2](#Ejercicios-2)
+    - [Jerarquía de las operaciones](#Jerarquía-de-las-operaciones)
+
+        - [Ejercicios 1](#Ejercicios-1)
+    - [Potencias](#Potencias)
+        - [Ejercicios 2](#Ejercicios-2)
+    - [Raices cuadradas](#Raices-cuadradas)
+    - [Ejercicios 3](#Ejercicios-3)
+    - []
 - []
+
+# 1 Numeros Naturales
 
 ## Numeros naturales
 <p>
@@ -24,7 +31,7 @@ numero, eso es el sistema. <span style="color:blue;">0,1,2,3,4,5,6,7,8,9</span>
 <p>Consiste en identificar q número va antes y cual después eso se le de izquierda
 a derecha.  Para eso usamos:</p>
 
-![Orden de números](imgs1/ordenNumeros.png)
+![Orden de números](imgs/ordenNumeros.png)
 
 ## Operaciones basicas
 <p>Sumas, restas, multiplicaciones, divisiones. Estas son operaciones basicas que se pueden 
@@ -60,7 +67,7 @@ las operaciones para hacerla más sencilla)
 
 ### Ejercicios 1
 
-![Ejercicios 1](imgs1/ejercicios1.png)
+![Ejercicios 1](imgs/ejercicios1.png)
 
 
 ## Potencias
@@ -70,29 +77,55 @@ Consiste en abreviar la forma en la que se representa una multiplicacion del mis
 Ejemplo: Si quisieramos representar  2 x 2 x 2 x 2 es más sencillo representarlo asi:
 </p>
 
-![Potencias](imgs1/baseYExponentePotencias.png)
+![Potencias](imgs/baseYExponentePotencias.png)
 
 <h2>Las propiedades de las potencias son las siguientes:</h2>
 
 - Producto con la misma base:  
-<img src="imgs1/PMB.png" style="width: 100px;">
+<img src="imgs/PMB.png" style="width: 100px;">
 
 - Cociente con la misma base:  
-<img src="imgs1/CMB.png" style="width: 100px;">
+<img src="imgs/CMB.png" style="width: 100px;">
 - Potencia de una potencia:  
-<img src="imgs1/PUP.png" style="width: 100px;">
+<img src="imgs/PUP.png" style="width: 100px;">
 - Producto y el mismo exponente:  
-<img src="imgs1/PME.png" style="width: 100px;">
+<img src="imgs/PME.png" style="width: 100px;">
 - Cociente y el mismo exponente:  
-<img src="imgs1/CME.png" style="width: 100px;">
+<img src="imgs/CME.png" style="width: 100px;">
 - Expontente 0:  
-<img src="imgs1/E0.png" style="width: 50px;">
+<img src="imgs/E0.png" style="width: 50px;">
 - Exponente 1:  
-<img src="imgs1/E1.png" style="width: 50px;">
+<img src="imgs/E1.png" style="width: 50px;">
 
 <hr>
 
 ### Ejercicios 2
 
-![Ejercicios 2](imgs1/ejercicios2.png)
+![Ejercicios 2](imgs/ejercicios2.png)
+
+## Raices cuadradas
+
+<p>
+La raíz cuadrada es la operacion contraria a elevar un numero al cuadrado
+</p>
+
+![Raices cuadradas](imgs/raiz64.png)
+
+<p>El simbolo √¯ se llama <ins>radical</ins> y el número contenido se llama <ins>radicando</ins> <br><br>
+Hay 2 tipos de raices:
+</p>
+
+- Raices cuadradas exactas: El número elevado al cuadrado da el radicando
+
+![Raices cuadradas](imgs/raizCuadradaExacta.png)
+
+- Raices cuadradas enteras: El número elevado al cuadrado no es exacto respecto al radicando por lo que se aproximará al más cercano y se obtendrá como resto la diferencia
+
+![Raices cuadradas](imgs/raizCuadradaEntera.png)
+
+### Ejercicios 3
+
+![Ejercicios 3](imgs/ejercicios3.png)
+
+
 
