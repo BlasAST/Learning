@@ -75,7 +75,7 @@ Ejemplo: Si quisieramos representar  2 x 2 x 2 x 2 es más sencillo representarl
 <h2>Las propiedades de las potencias son las siguientes:</h2>
 
 - Producto con la misma base:  
-<img src="imgs1/PMB.pnG" style="width: 100px;">
+<img src="imgs1/PMB.png" style="width: 100px;">
 
 - Cociente con la misma base:  
 <img src="imgs1/CMB.png" style="width: 100px;">
