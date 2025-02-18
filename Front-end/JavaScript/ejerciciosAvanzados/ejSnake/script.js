@@ -1,21 +1,26 @@
 document.addEventListener("DOMContentLoaded",()=>{
     main();
-    let snake= document.querySelector("head");
     
 })
 
 function main(){
     window.addEventListener("keydown",(event)=>{
-        event.key=="ArrowUp"?console.log("Arriba"):
-        event.key=="ArrowDown"?console.log("Abajo"):
-        event.key=="ArrowRight"?console.log("Derecha"):
-        event.key=="ArrowLeft"?console.log("Izquierda"):null;
+        event.key=="ArrowUp"?mover(`top:`):
+        event.key=="ArrowDown"?console.log("bottom:"):
+        event.key=="ArrowRight"?console.log("right:"):
+        event.key=="ArrowLeft"?console.log("left:"):null;
     })
 }
 
-function mover(X,Y){
-    setInterval(()=>{
-        let cadena= `left: ${X} px;top: ${Y};transform:rotate();`
-        snake.setAttribute("style",cadena);
-    },2000)
+function mover(cadena, desplazamiento=50){
+    let snake= document.querySelector(".head"); 
+    let movimiento;
+    if(movimiento){
+        movimiento.clearInterval();
+    }
+    movimiento=setInterval(()=>{
+        console.log(cadena);
+        snake.setAttribute("style",cadena+desplazamiento+"px;");
+        desplazamiento+=50;
+    },500)
 }
