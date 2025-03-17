@@ -3,10 +3,11 @@
 
 ## Contenido
 
-- [1 Representación de los Números Enteros sin Signo](1-Representación-de-los-Números-Enteros-sin-Signo)
+- [1.1 Representación de los Números Enteros sin Signo](1.1-Representación-de-los-Números-Enteros-sin-Signo)
+- []
 
 
-## 1 Representación de los Números Enteros sin Signo
+## 1.1 Representación de los Números Enteros sin Signo
 - [Introducción a los sistemas de enumeración](Introducción-a-los-sistemas-de-enumeración)
 
 ### Introducción a los sistemas de enumeración
@@ -30,4 +31,10 @@ Todo esto se explica porque para el objetivo de este apartado es necesario conoc
 El <b>sistema binario hace uso de 2 unicos digitos  </b> que se irán combinando para la representación de todas las cantidades númericas posibles. Estos digitos son el <b>{0,1}</b>.
 
 Puede parecer una locura querer representar cualquier número con solo dos digitos pero en realidad es muy sencillo. Para poder hacer estas representaciones lo que haremos será la unificar, agrupar, combinar una cantidad finita de simbolos para crear el número que queramos representar.
+</p>
+
+<p>
+La cantidad de secuencias disponibles que podremos crear (longitud de palabra). Se basa en la cantidad de digitos de los que disponemos(d) y la longitud de cadena(n) que podemos crear que seria d^n (cantidad de digitos elevado a la longitud de cadena).
+
+Una vez con los digitos y las cadenas que queremos representar  debemos de saber el numero concreto que representan estas secuencias.
 </p>
