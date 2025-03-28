@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "locale.h": "c",
+        "unistd.h": "c",
+        "ncurses.h": "c",
+        "iconv.h": "c",
+        "asce.h": "c",
+        "tablero.h": "c",
+        "game.h": "c",
+        "player.h": "c"
+    }
+}

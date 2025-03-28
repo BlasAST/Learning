@@ -1,15 +1,19 @@
 version: '3.8'
 
 services:
-
   gcc:
-    image: gcc:4.9
+    build: .  # Usa el Dockerfile en el directorio actual para construir la imagen
     container_name: c_container
     volumes:
-      - .:/c
-    working_dir: /c # Establecer un directorio de trabajo en el contenedor
-    command: tail -f /dev/null # Comando para que no termine la terminal hasta que se
-                               # le indique
+      - ..:/c  # Mapea el directorio actual del host al contenedor en /c
+    working_dir: /c  # Establecer un directorio de trabajo en el contenedor
+    networks:
+      - red_c
+    command: tail -f /dev/null  # Comando para que no termine la terminal hasta que se cierre el contenedor
+
+networks:
+  red_c:
+    driver: bridge
 
 # Para la ejecución en C++ lo que yo hago que me resulta más practico es:
   # Mediante el comando g++, aunque tambien se podria con gcc para C
