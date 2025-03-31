@@ -1,22 +1,24 @@
 ## Jerarquia de Chomsky
-    La jerarquía de Chomsky es una clasificación jerárquica de distintos tipos de gramáticas formales que generan lenguajes formales.
-    Se pueden clasificar en 4 tipos:
+    La jerarquía de Chomsky es una clasificación
+    jerárquica de distintos tipos de gramáticas formales
+    que generan lenguajes formales. Se pueden clasificar
+    en 4 tipos:
 - Tipo 3:
 
-    <b>Lenguaje Regular</b> con una <b>gramática Regular</b> y los autómatas o maquinas que lo manejan son los <b>Autómatas finitos deterministas y no deterministras</b>
+    ***Lenguaje Regular*** con una **gramática Regular** y los autómatas o maquinas que lo manejan son los **Autómatas finitos deterministas y no deterministras**
 - Tipo 2:
 
-    <b>Lenguaje Independiente del Contexto</b> con una <b>gramática Independiente del Contexto</b> y los autómatas o maquinas que lo manejan son los <b>Autómatas a pila.</b>
+    ***Lenguaje Independiente del Contexto*** con una **gramática Independiente del Contexto** y los autómatas o maquinas que lo manejan son los **Autómatas a pila.**
 - Tipo 1:
 
-    <b>Lenguaje Dependiente del Contexto</b> con una <b>gramática Dependiente del Contexto</b> y los autómatas o maquinas que lo manejan son las <b>Máquinas de Turing de cinta finita</b>
+    ***Lenguaje Dependiente del Contexto*** con una **gramática Dependiente del Contexto** y los autómatas o maquinas que lo manejan son las **Máquinas de Turing de cinta finita**
 - Tipo 0:
 
-    <b>Lenguaje Recursivamente Enumerables</b> con una <b>gramática de tipo 0</b> y los autómatas o maquinas que lo manejan son las <b>Máquinas de Turing de cinta infinita</b>
+    ***Lenguaje Recursivamente Enumerables*** con una **gramática de tipo 0** y los autómatas o maquinas que lo manejan son las **Máquinas de Turing de cinta infinita**
 
-Otra forma de verlo sería asi:
+> Otra forma de verlo sería asi:
     ![Jeraquia de Chomsky](../imgs/tablaChomsky.png)
     
-o también:
+> O también:
     ![Jeraquia de Chomsky](../imgs/CircleChomsky.png)
 

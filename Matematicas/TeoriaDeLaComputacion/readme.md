@@ -2,6 +2,7 @@
 ## Contenido
 - [Definiciones base](struct/definiciones.md)
 - [Jerarquia de Chomsky](struct/jerarquiaDeChomsky.md)
+- [Tipo 3](struct/Tipo3.md)
 
 ### Aplicacion
 
@@ -16,4 +17,3 @@ Sabiendo esto, el objetivo por el cual se debe de estudiar es para:
 - Y muchas otras cosas.
 
 Lo que se utilizará para el estudio de Teoría de la computación serán distintos tipos de autómatas. Una maquina abstracta que crearemos (en papel,diagramas,etc) y asi poder representar lo que queramos.
-
