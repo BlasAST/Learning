@@ -3,6 +3,8 @@
 - [Lenguajes y Gramáticas Regulares](#Lenguajes-y-Gramáticas-Regulares)
 - [Autómata Finito Determinista](#Autómata-Finito-Determinista)
 - [Autómata Finito Determinista Complemento](#Autómata-Finito-Determinista-Complemento)
+- [Unión de lenguajes](#Unión-de-lenguajes)
+
 
 ## Lenguajes y Gramáticas Regulares
 Para la representación de dichos lenguajes regulares se pueden expresar mediante expresiones regulares:
@@ -77,11 +79,41 @@ En la tabla de arriba lo que se muestra es:
 
 ## Autómata Finito Determinista Complemento
 
-El AFD complemento de un lenguaje es el que contiene todas aquellas palabras que no contiene el lenguaje original. El complemento del lenguaje $ Α  $ es
-$ \overline{A} $
+El AFD complemento de un lenguaje es el que contiene todas aquellas palabras que no contiene el lenguaje original. El complemento del lenguaje $  Α  $ es
+$ Aᶜ $ 
 
 Para su construcción lo único que hay que hacer es convertir los estados finales en no finales y los no finales en finales:
 
 ![AFD complemento](../imgs/AFD%20complemento.png)
 
+## Unión de lenguajes
 
+Podemos decir que un lenguaje es la unión de dos lenguajes más sencillos.
+
+Basicamente lo que podemos hacer es construir un autómata que reconozca la unión de ambos lenguajes a partir de los autómatas de cada parte de la unión por separado.
+
+La idea de esto es que el autómata sea capaz de avanzar leyendo los simbolos de entrada de ambos autómatas a la vez.
+
+Para esto lo que haremos será crear pares de estados de los autómatas bases/originales.
+
+Los pasos a seguir serían los siguientes:
+
+- Descripción formal de ambos autómatas.
+
+- Q será el producto cartesiano de el A1 y A2
+    > [!NOTE]
+    > El producto cartesiano es el conjunto que se forma como resultado de la unión de A1 Y A2 formando parejas (pares ordenados)
+
+    > Ejemplo:
+    > A1 = {a,b,c} y A2 = {1,2}                    
+    > $A1 U A2 = {(a,1),(a,2),(b,1),(b,2),(c,1),(c,2)}$ 
+
+- ∑ lo mismo, el mismo alfabeto en A1 Y A2
+- δ funciones de transición creadas a partir de cada par ordenado.
+- q0 será el par en el que empiezan ambos autómatas. `Si A1 empieza en q8 y A2 en q3 el q inicial sería (q8-3)`
+
+- F será el `conjunto de pares en el que termina o bien A1 o A2 para el caso de la unión` y `en caso de la intersección sería el conjunto de pares en el que terminan AMBOS no solo uno`.
+
+![union_e_interseccion](../imgs/UNION%20E%20INTERSECCION.png)
+
+Una vez tenemos los diagramas creamos las tablas de transición  de ambas y las unificamos comprobando las transiciones con el mismo simbolo a cada par ordenado. De esta forma será más sencillo crear la unión e intersección de los lenguajes.
