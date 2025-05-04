@@ -3,6 +3,7 @@
 - [Definiciones base](struct/definiciones.md)
 - [Jerarquia de Chomsky](struct/jerarquiaDeChomsky.md)
 - [Tipo 3](struct/Tipo3.md)
+- [Modelo URM](struct/urm.md)
 
 ### Aplicacion
 
