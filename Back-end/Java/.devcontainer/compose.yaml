@@ -1,0 +1,7 @@
+services:
+  java:
+    build: .
+    container_name: java
+    volumes:
+      - ../../../:/Learning
+    command: tail -f /dev/null

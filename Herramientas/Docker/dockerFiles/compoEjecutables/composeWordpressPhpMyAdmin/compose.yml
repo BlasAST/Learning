@@ -1,0 +1,46 @@
+# Creación de un wordpress con mysql y phpmyadmin totalmente funcional
+services:
+  mysql1:
+    image: mysql
+    restart: always
+    container_name: mysql_compose
+    environment:
+      MYSQL_ROOT_USER: blas1234
+      MYSQL_ROOT_PASSWORD: blas1234
+      MYSQL_USER: blas1234
+      MYSQL_PASSWORD: blas1234
+      MYSQL_DATABASE: compose_data
+    networks:
+      - red_compose
+    volumes:
+      - compose_data:/var/lib/mysql
+  wordpress1:
+    image: wordpress
+    container_name: wordpress_compose
+    depends_on:
+      - mysql1
+    ports:
+      - "80:80"
+    networks:
+      - red_compose
+    volumes:
+      - compose_data_wordpress:/var/www/html
+  phpmyadmin1:
+    image: phpmyadmin
+    container_name: phpmyadmin_compose
+    ports:
+      - "90:80"
+    restart: always
+    depends_on:
+      - mysql1
+    environment:
+      PMA_HOST: mysql1
+      MYSQL_ROOT_USER: blas1234
+    networks:
+      - red_compose
+networks:
+  red_compose:
+    driver: bridge
+volumes:
+  compose_data:
+  compose_data_wordpress:

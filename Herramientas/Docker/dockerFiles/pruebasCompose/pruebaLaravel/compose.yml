@@ -1,0 +1,40 @@
+services:
+  php:
+    image: php
+    container_name: php_laravel
+    working_dir: /var/www/html
+    volumes:
+      - ./laravel:/var/www/html
+    ports:
+      - "8000:8000" 
+    depends_on:
+      - mysql
+      - composer
+    command: sh -c "php artisan serve --host=0.0.0.0 --port=8000"
+    networks:
+      - red_laravel
+    
+  mysql:
+    image: mysql
+    container_name: mysql_laravel
+    environment:
+      MYSQL_ROOT_PASSWORD: blas1234
+      MYSQL_DATABASE: laravel
+    ports:
+      - "3305:3306"
+    networks:
+      - red_laravel
+  composer:
+    image: composer
+    container_name: composer_laravel
+    working_dir: /var/www/html
+    volumes:
+      - ./laravel:/var/www/html
+    networks:
+      - red_laravel
+
+    command:  composer install
+    # sh -c "composer create-project laravel/laravel &&"
+networks:
+  red_laravel:
+    driver: bridge

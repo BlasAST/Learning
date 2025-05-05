@@ -1,0 +1,12 @@
+{
+    "name": "MyContainerJava",
+    "image":"openjdk",
+    "features": {},
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "Oracle.oracle-java"
+            ]
+        }
+    }
+}

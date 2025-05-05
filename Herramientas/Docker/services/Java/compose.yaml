@@ -1,0 +1,7 @@
+services:
+  java:
+    image: openjdk:11
+    container_name: java
+    volumes:
+      - ../../../:/Learning
+    command: tail -f /dev/null

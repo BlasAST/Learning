@@ -1,0 +1,32 @@
+version: '3.8'
+
+services:
+  mysql1:
+    image: mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: blas1234
+      MYSQL_USER: blas1234
+      MYSQL_PASSWORD: blas1234
+      MYSQL_DATABASE: db_compose
+    networks:
+      - red_compose
+    volumes:
+      - compose_data:/var/lib/mysql
+  phpmyadmin1:
+    image: phpmyadmin
+    ports: 
+      - "90:80"
+    depends_on:
+      - mysql1
+    environment:
+      PMA_HOST: mysql1
+      # MYSQL_ROOT_PASSWORD: blas1234
+    networks:
+      - red_compose
+networks:
+  red_compose:
+    driver: bridge
+volumes:
+  compose_data:
+  compose_data_wordpress:
