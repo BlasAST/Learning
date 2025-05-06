@@ -1,5 +1,5 @@
 
-package Persona;
+package Obj;
 
 public class Persona {
     public String Nombre;
