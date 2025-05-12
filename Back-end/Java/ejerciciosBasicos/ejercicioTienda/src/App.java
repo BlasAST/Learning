@@ -1,12 +1,16 @@
 
 import java.util.Scanner;
 
+import Obj.Tienda;
+
 public class App {
 
 	static Scanner into = new Scanner(System.in);
+	static Tienda tienda =  new Tienda();
 	public static void main(String[] args) throws Exception {
 		System.out.println("Bienvenido a la tienda online");
 		menu();
+
 	}
 
 	public static void menu()
@@ -32,13 +36,13 @@ public class App {
 		switch (opcion)
 		{
 			case 1:
-				Utils_app.login();
+				Utils_app.login(tienda);
 			break;
 			case 2:
-				Utils_app.register();
+				Utils_app.register(tienda);
 			break;
 			case 3:
-				Utils_app.consult();
+				Utils_app.consult(tienda);
 			break;
 			case 4:
 				System.out.println("Hasta la proxima");

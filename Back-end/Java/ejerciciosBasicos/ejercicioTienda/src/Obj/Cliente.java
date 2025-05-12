@@ -1,17 +1,29 @@
 package Obj;
 
 import java.time.LocalTime;
-import java.util.Locale;
 
 public class Cliente extends Persona{
 
-	String	identificador;
-	LocalTime	horaDeEntrada;
+	private static int	identificador = 0;
+	private LocalTime	horaDeEntrada;
 
-	public Cliente(String nombre, String apellidos, int edad,String identificador, String entrada)
+	public Cliente(String nombre, String apellidos, int edad)
 	{
 		super(nombre, edad, apellidos);
-		this.identificador = identificador;
-		this.horaDeEntrada = LocalTime.parse(entrada);
+		identificador++;
+		this.horaDeEntrada = LocalTime.now();
+	}
+
+	public static	Cliente create_client()
+	{
+		Cliente cliente;
+		System.out.println("Indicame el nombre del cliente");
+		String nombre = into.nextLine();
+		System.out.println("Apellidos:");
+		String apellidos = into.nextLine();
+		System.out.println("Edad:");
+		int edad = into.nextInt();
+		cliente =  new Cliente(nombre, apellidos, edad);
+		return (cliente);
 	}
 }
