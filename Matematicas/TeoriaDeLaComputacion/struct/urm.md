@@ -12,3 +12,6 @@ Para manejar URM se hace uso de las siguientes instrucciones:
 - T($n, m$) ≡ $n$ := $m$. Transferencia
 - J($i$) Salto a la línea i. Salto
 - J($n,m,i$) Si n = m salta a la linea i, de lo contrario continúa a la siguiente linea. Salto Condicional
+
+> Ejemplo URM
+![Ejemplo URM](../imgs/URM_example.png)

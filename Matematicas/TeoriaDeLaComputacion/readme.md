@@ -4,7 +4,7 @@
 - [Jerarquia de Chomsky](struct/jerarquiaDeChomsky.md)
 - [Tipo 3](struct/Tipo3.md)
 - [Modelo URM](struct/urm.md)
-
+- [Modelo RAM](struct/ram.md)
 ### Aplicacion
 
 Vale, esta asignatura basicamente se basa en el estudio de la abstracción de los procesos que se realizan con el fin de poder desarrollarlos.
