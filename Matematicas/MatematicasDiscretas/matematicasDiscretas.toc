@@ -1,0 +1,5 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Introducción a las matemáticas discretas}{3}{}%
+\contentsline {section}{\numberline {2}Teoría de conjuntos}{4}{}%
+\contentsline {subsection}{\numberline {2.1}Conjuntos}{4}{}%
+\contentsline {subsection}{\numberline {2.2}Cardinalidad}{5}{}%

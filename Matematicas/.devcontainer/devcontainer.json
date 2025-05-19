@@ -1,0 +1,12 @@
+{
+    "name": "ConvertidosLaTex",
+    "image": "pandoc/latex",
+    "features": {},
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "james-yu.latex-workshop"
+            ]
+        }
+    }
+}
