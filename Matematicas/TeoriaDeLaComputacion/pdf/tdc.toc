@@ -1,0 +1,9 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Maquina de Turing Universal}{3}{}%
+\contentsline {section}{\numberline {2}Concepto de Algoritmo}{4}{}%
+\contentsline {section}{\numberline {3}Computabilidad y Decibilidad}{4}{}%
+\contentsline {section}{\numberline {4}Problema de la parada (HALTING PROBLEM)}{5}{}%
+\contentsline {section}{\numberline {5}Reducibilidad}{6}{}%
+\contentsline {section}{\numberline {6}Inclusión de lenguajes}{6}{}%
+\contentsline {section}{\numberline {7}Otros formalismos}{7}{}%
+\contentsline {section}{\numberline {8}Tesis de Church-Turing}{7}{}%
