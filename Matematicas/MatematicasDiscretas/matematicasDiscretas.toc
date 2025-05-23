@@ -3,3 +3,4 @@
 \contentsline {section}{\numberline {2}Teoría de conjuntos}{4}{}%
 \contentsline {subsection}{\numberline {2.1}Conjuntos}{4}{}%
 \contentsline {subsection}{\numberline {2.2}Cardinalidad}{5}{}%
+\contentsline {section}{\numberline {3}Representación de conjuntos}{5}{}%
