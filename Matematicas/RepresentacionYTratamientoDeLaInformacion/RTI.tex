@@ -103,8 +103,85 @@ Por ejemplo:
     D = dig3(x), dig2(y) ,dig1(z), dig0(i).
 \end{quote}
 
-Pues dependiendo de donde estan se toma dicho numero como la potencia de la base
+Pues dependiendo de donde estan se toma dicho numero como la potencia,
+siendo el de más de la izquierda el dígito más significativo y el de la más a la derecha
+el menos significativo.\\\\
 
+Al usar este método la funcionón valor deja de tener inconvenientes para los sistemas. Esta base que usamos
+será lo que determine la solución del problema.
 \subsection{Sistemas Relativos a una Base}
+Un caso en particular de los sitemas posicionales y ponderados son los que usan como base del sistema
+un número entero al que se llama \textbf{base} mediante el que se obtienen los \textbf{pesos} como
+potencias de esta base. Los exponentes deben ser positivos dado que así evitamos la aparición de números
+fraccionarios(por ahora).
+\newpage
+\subsubsection{Conjunto de valores representables(CVR) o rango}
+Teniendo en cuenta que la base  $b$ es el número de números decimales respresentables y la longitud de
+las cadenas es $n$, entonces el conjunto de valores que se pueden representar viene dado por $b^n$\\
+Todos los valores representables se abarcan desde el más pequeño que se puede representar que estará 
+formado por los digitos de menor valor como los más grandes formados por los de mayor valor. El rango
+se calcula de esta forma:
+\begin{quote}
+    $CVR = [0, b^n - 1]$\\\\
+    El rango siempre debe ser expresado en decimal.
+\end{quote}
+
+\subsubsection{Elección de la base}
+Para saber que base escoger en un sistema de numeración no se puede elegir cualquier número, sino que debe
+de tomarse \textbf{el número total de dígitos del sistema.}\\\\
+Si $base > digitos$ el sistema sería incompleto por lo que habría números no representables en este sistema\\\\
+Si $base < digitos$ sería redundante por lo que existiría múltiples representaciones de un mismo número.\\\\
+Por eso:
+\begin{itemize}
+    \item $base = digitos$  el sistema es completo dado que puede representar todo lo necesario.
+    \item Los digitos a utilizar en un sistema relativo a base tienen que elegirse sabiendo que el valor
+    de  cualquiera de los digitos no supere a b.
+    \item Para un mejor entendimiento deberemos de representar el Digito a representar y su base de esta forma:
+    $D_b$
+\end{itemize}
+\newpage
+\subsubsection{Sistemas de mayor implantación}
+Los sistemas que más se suelen usar son los siguientes:
+\begin{itemize}
+    \item Binario: \\
+    Base 2, digitos \{0, 1\}.\\
+    Los pesos serían: $p_0 = 2^0 =1 ,\quad p_1 = 2^1 =2 ,\quad p_2 = 2^2 =4,
+    \quad p_3 = 2^3 =8$, etc.
+    \item Octal
+    Base 8, digitos \{0,1,2,3,4,5,6,7\}\\
+    Los pesos serían: $p_0 = 8^0 =1, \quad p_1 = 8^1 =8, \quad p_2 = 8^2 =64
+   , \quad p_3 = 8^3 =512$, etc.
+    \item Decimal
+    Base 10, digitos \{0,1,2,3,4,5,6,7,8,9\}\\
+    Los pesos serían: $p_0 = 10^0 =1, \quad p_1 = 10^1 =10, \quad p_2 = 10^2 =100
+   , \quad p_3 = 10^3 =1000$, etc.
+    \item Hexadecimal
+    Base 16, digitos \{0,1,2,3,4,5,6,7,8,9,A,B,C,D,E,F\}. (A=10, B=11, etc)\\
+    Los pesos serían: $p_0 = 16^0 =1, \quad p_1 = 16^1 =16, \quad p_2 = 16^2 =256$,
+    etc.
+\end{itemize}
 \subsection{Conversiones entre Bases}
+Para la conversión  entre bases hay distintas formas, a continuación se explica
+brevemente.
+\subsubsection{Conversión de base b a decimal}
+Se aplica la funcion \"Valor\" matematicamente sería:
+\begin{quote}
+    $V(D) = \sum_{i = 0}^{n - 1} V(d_i)*b^i$
+\end{quote}
+\subsubsection{Conversión de decimal a base b}
+Se realiza el método de las divisiones sucesivas:
+ \begin{enumerate}
+    \item Se divide el número decimal entre la base a la que se quiere convertir
+    \item Si el cociente obtenido sigue siendo divisible entre la base se hacerlo
+    recursivamente hasta obtener un cociente no divisible.
+    \item Se usa el último cociente como dígito de mayor peso de la secuencia 
+    resultante dada por ese último cociente y los restos en sentido inverso
+    al obtenido.
+ \end{enumerate}
+\subsubsection{Conversión de base b a base c}
+Para hacer esto no se puede hacer directamente. Lo que se hace es:
+\begin{enumerate}
+    \item Traducir la cadena de base b a decimal
+    \item El resultado se convierte a la base c
+\end{enumerate}
 \end{document}

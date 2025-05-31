@@ -3,4 +3,10 @@
 \contentsline {subsection}{\numberline {1.1}Introducción a los Sistemas de Numeración}{4}{}%
 \contentsline {subsection}{\numberline {1.2}Sistemas Posicionales y Ponderados}{5}{}%
 \contentsline {subsection}{\numberline {1.3}Sistemas Relativos a una Base}{5}{}%
-\contentsline {subsection}{\numberline {1.4}Conversiones entre Bases}{5}{}%
+\contentsline {subsubsection}{\numberline {1.3.1}Conjunto de valores representables(CVR) o rango}{6}{}%
+\contentsline {subsubsection}{\numberline {1.3.2}Elección de la base}{6}{}%
+\contentsline {subsubsection}{\numberline {1.3.3}Sistemas de mayor implantación}{7}{}%
+\contentsline {subsection}{\numberline {1.4}Conversiones entre Bases}{7}{}%
+\contentsline {subsubsection}{\numberline {1.4.1}Conversión de base b a decimal}{7}{}%
+\contentsline {subsubsection}{\numberline {1.4.2}Conversión de decimal a base b}{7}{}%
+\contentsline {subsubsection}{\numberline {1.4.3}Conversión de base b a base c}{7}{}%
