@@ -10,3 +10,4 @@
 \contentsline {subsubsection}{\numberline {1.4.1}Conversión de base b a decimal}{7}{}%
 \contentsline {subsubsection}{\numberline {1.4.2}Conversión de decimal a base b}{7}{}%
 \contentsline {subsubsection}{\numberline {1.4.3}Conversión de base b a base c}{7}{}%
+\contentsline {section}{\numberline {2}Códigos Binarios}{8}{}%
