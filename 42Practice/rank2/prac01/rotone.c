@@ -16,10 +16,9 @@ int	main(int argn, char **args)
 			if (args[1][i] == 'z' || args[1][i] == 'Z')
 				c -= 26;
 			c++;
-			if (args[1][i] >= 'A' && args[1][i] <= 'Z')
+			if ((args[1][i] >= 'A' && args[1][i] <= 'Z')
+			|| (args[1][i] >= 'a' && args[1][i] <= 'z'))
 				write(1, &c , 1);
-			else if (args[1][i] >= 'a' && args[1][i] <= 'z')
-				write(1, &c, 1);
 			else
 				write(1, &args[1][i], 1);
 			i++;
